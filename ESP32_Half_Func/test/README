@@ -9,3 +9,14 @@ in the development cycle.
 
 More information about PlatformIO Unit Testing:
 - https://docs.platformio.org/en/latest/advanced/unit-testing/index.html
+
+该目录用于PlatformIO测试运行程序和项目测试。
+
+单元测试是一种软件测试方法
+源代码、一个或多个MCU程序模块的集合以及相关联的
+测试控制数据、使用程序和操作程序，以
+确定它们是否适合使用。单元测试尽早发现问题
+在开发周期中。
+
+有关PlatformIO单元测试的更多信息:
+- https://docs.platformio.org/en/latest/advanced/unit-testing/index.html

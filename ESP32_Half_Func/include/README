@@ -37,3 +37,44 @@ Read more about using header files in official GCC documentation:
 * Computed Includes
 
 https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
+
+
+
+该目录用于项目头文件。
+
+头文件是包含C声明和宏定义的文件
+在几个项目源文件之间共享。你要求使用
+位于“src”文件夹中的项目源文件(C、C++等)中的头文件
+通过用C预处理指令`#include '包含它。
+
+` ` src/main.c
+
+#include "header.h "
+
+int main (void)
+{
+...
+}
+```
+
+包含头文件会产生与复制头文件相同的结果
+到每个需要它的源文件中。这种复制会很耗时
+并且容易出错。对于头文件，会出现相关的声明
+只有一个地方。如果他们需要改变，他们可以在一个
+位置，包含头文件的程序将自动使用
+下次重新编译时的新版本。头文件消除了
+查找和更改所有副本，以及未能
+找到一个副本将导致程序中的不一致。
+
+在C语言中，通常的惯例是头文件以` . h '结尾。
+在中只使用字母、数字、破折号和下划线是最方便的
+头文件名称，最多一个点。
+
+阅读更多关于在GCC官方文档中使用头文件的信息:
+
+*包含语法
+*包括操作
+*一次性标题
+*计算包括
+
+https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
